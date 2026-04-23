@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexora Solutions</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .btn {
+      background: #7a4b2b;
+      color: white;
+      padding: 10px 22px;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+
+    .menu-card {
+      background: #7a4b2b;
+      color: white;
+      padding: 14px;
+      border-radius: 14px;
+      transition: 0.3s;
+      display: block;
+    }
+
+    .menu-card:hover {
+      background: #5c3720;
+      transform: translateX(6px);
+    }
+
+    #overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.3);
+      opacity: 0;
+      pointer-events: none;
+      transition: 0.3s;
+      z-index: 40;
+    }
+
+    #overlay.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="fixed top-0 w-full z-50 bg-[#f5efe9]/80 backdrop-blur px-8 py-4 flex justify-between items-center">
+  <button onclick="openMenu()" class="btn">Explore</button>
+  <h1 class="text-xl font-bold text-[#7a4b2b]">Nexora</h1>
+</nav>
+
+<!-- OVERLAY -->
+<div id="overlay" onclick="closeMenu()"></div>
+
+<!-- SIDEBAR -->
+<div id="menu" class="fixed top-0 left-[-100%] w-80 h-full bg-[#f5efe9] p-6 transition duration-300 shadow-xl z-50 overflow-y-auto">
+
+  <button onclick="closeMenu()" class="mb-6 text-gray-600">Close ✕</button>
+
+  <div class="flex flex-col gap-4">
+
+    <a href="index.html" class="menu-card">Home</a>
+
+    <a href="demos.html" class="menu-card">Demo Websites ⭐</a>
+
+    <a href="why.html" class="menu-card">Why Choose Us</a>
+
+    <a href="benefits.html" class="menu-card">Benefits</a>
+
+    <a href="process.html" class="menu-card">Our Process</a>
+
+    <a href="pricing.html" class="menu-card">Pricing</a>
+
+    <a href="contact.html" class="menu-card">Contact ⭐</a>
+
+  </div>
+
+</div>
+
+<!-- HERO GRID -->
+<section class="h-screen grid grid-cols-2 grid-rows-2">
+
+  <!-- SALON -->
+  <div class="bg-cover bg-center"
+    style="background-image:url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9');">
+  </div>
+
+  <!-- CAFE -->
+  <div class="bg-cover bg-center"
+    style="background-image:url('https://images.unsplash.com/photo-1509042239860-f550ce710b93');">
+  </div>
+
+  <!-- HOTEL -->
+  <div class="bg-cover bg-center"
+    style="background-image:url('https://images.unsplash.com/photo-1566073771259-6a8506099945');">
+  </div>
+
+  <!-- GYM -->
+  <div class="bg-cover bg-center"
+    style="background-image:url('https://images.unsplash.com/photo-1558611848-73f7eb4001a1');">
+  </div>
+
+</section>
+
+<!-- CENTER CONTENT -->
+<div class="absolute top-0 left-0 w-full h-screen flex items-center justify-center z-30">
+
+  <div class="bg-white/85 backdrop-blur-lg p-10 rounded-2xl text-center max-w-2xl shadow-lg">
+
+    <p class="text-[#7a4b2b] tracking-widest text-sm mb-2">
+      NEXORA SOLUTIONS
+    </p>
+
+    <h1 class="text-4xl md:text-6xl font-bold">
+      We Build <span class="text-[#7a4b2b]">Premium Websites</span>
+    </h1>
+
+    <p class="mt-4 text-gray-600">
+      Modern, fast and high converting websites for local businesses.
+    </p>
+
+    <a href="demos.html" class="btn mt-6 inline-block">
+      View Demo
+    </a>
+
+  </div>
+
+</div>
+
+<!-- JS -->
+<script>
+function openMenu() {
+  document.getElementById("menu").style.left = "0";
+  document.getElementById("overlay").classList.add("active");
+}
+
+function closeMenu() {
+  document.getElementById("menu").style.left = "-100%";
+  document.getElementById("overlay").classList.remove("active");
+}
+</script>
+
+</body>
+</html>

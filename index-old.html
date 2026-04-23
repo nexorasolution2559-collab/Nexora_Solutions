@@ -1,0 +1,298 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexora Solutions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f7fbff;
+      overflow-x: hidden;
+    }
+
+    .glass {
+      background: rgba(255,255,255,0.75);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255,255,255,0.4);
+    }
+
+    .hero-glow {
+      position: absolute;
+      border-radius: 9999px;
+      filter: blur(90px);
+      z-index: 0;
+    }
+  </style>
+</head>
+<body id="top" class="text-slate-900">
+
+  <header class="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-lg border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-2xl bg-blue-500 text-white flex items-center justify-center text-xl font-bold shadow-lg">
+          N
+        </div>
+        <div>
+          <h1 class="text-2xl font-bold">Nexora Solutions</h1>
+          <p class="text-sm text-slate-500">Premium Websites</p>
+        </div>
+      </div>
+
+      <nav class="hidden md:flex gap-8 text-sm font-medium text-slate-600">
+        <a href="#services" class="hover:text-blue-600 transition">Services</a>
+        <a href="#portfolio" class="hover:text-blue-600 transition">Portfolio</a>
+        <a href="#pricing" class="hover:text-blue-600 transition">Pricing</a>
+        <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="relative overflow-hidden pt-40 pb-24 px-6">
+    <div class="hero-glow bg-blue-200 w-96 h-96 top-10 -left-24"></div>
+    <div class="hero-glow bg-cyan-100 w-[30rem] h-[30rem] top-0 right-0"></div>
+
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center relative z-10">
+      <div>
+        <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white shadow-md border border-blue-100 text-blue-600 font-medium mb-8">
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          Trusted by Local Businesses
+        </div>
+
+        <h2 class="text-5xl md:text-7xl font-bold leading-tight">
+          Premium Websites That Make Businesses Look
+          <span class="text-blue-500">Professional</span>
+        </h2>
+
+        <p class="mt-8 text-lg text-slate-600 max-w-2xl leading-relaxed">
+          Nexora Solutions creates premium websites for dental clinics, salons, gyms, cafes, hotels, restaurants, tuition centers, and local businesses.
+        </p>
+
+        <div class="mt-10 flex flex-wrap gap-4">
+          <a href="#portfolio" class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-full font-semibold shadow-xl transition hover:-translate-y-1">
+            View Portfolio
+          </a>
+          <a href="#contact" class="border border-slate-300 bg-white px-8 py-4 rounded-full font-semibold text-slate-700 hover:border-blue-500 hover:text-blue-600 transition">
+            Contact Us
+          </a>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
+          <div class="glass rounded-3xl p-5 text-center font-semibold shadow-lg">Fast Delivery</div>
+          <div class="glass rounded-3xl p-5 text-center font-semibold shadow-lg">Modern UI</div>
+          <div class="glass rounded-3xl p-5 text-center font-semibold shadow-lg">Mobile Responsive</div>
+          <div class="glass rounded-3xl p-5 text-center font-semibold shadow-lg">SEO Friendly</div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="absolute -left-6 top-6 w-full h-full bg-blue-100 rounded-[2rem]"></div>
+
+        <div class="relative glass rounded-[2rem] p-8 shadow-2xl">
+          <div class="flex items-center gap-2 mb-6">
+            <span class="w-3 h-3 rounded-full bg-red-400"></span>
+            <span class="w-3 h-3 rounded-full bg-yellow-400"></span>
+            <span class="w-3 h-3 rounded-full bg-green-400"></span>
+          </div>
+
+          <div class="bg-gradient-to-br from-blue-50 to-white rounded-[2rem] p-8">
+            <div class="bg-white rounded-3xl p-8 shadow-lg">
+              <div class="flex justify-between items-center">
+                <div>
+                  <p class="text-sm text-blue-500 font-medium">Featured Project</p>
+                  <h3 class="text-3xl font-bold mt-2">BrightSmile Dental Care</h3>
+                </div>
+                <span class="bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-semibold">Live Demo</span>
+              </div>
+
+              <div class="mt-8 grid grid-cols-2 gap-4">
+                <div class="bg-white rounded-2xl shadow-md p-5 text-center">
+                  <h4 class="text-3xl font-bold text-blue-500">25+</h4>
+                  <p class="text-slate-500 mt-2 text-sm">Demo Websites</p>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-md p-5 text-center">
+                  <h4 class="text-3xl font-bold text-blue-500">100%</h4>
+                  <p class="text-slate-500 mt-2 text-sm">Responsive Design</p>
+                </div>
+              </div>
+
+              <div class="mt-6 bg-white rounded-2xl shadow-md p-6">
+                <p class="text-slate-500 text-sm font-medium">Included Features</p>
+                <div class="grid grid-cols-2 gap-3 mt-4 text-sm text-slate-700">
+                  <div>• Appointment Forms</div>
+                  <div>• WhatsApp Button</div>
+                  <div>• Google Maps</div>
+                  <div>• Testimonials</div>
+                  <div>• Premium UI</div>
+                  <div>• Fast Delivery</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="py-24 px-6 bg-[#eef7ff]">
+    <div class="max-w-7xl mx-auto text-center">
+      <p class="text-blue-500 uppercase tracking-[0.3em] font-semibold">Services</p>
+      <h3 class="text-5xl font-bold mt-4">Websites for Every Business</h3>
+      <p class="text-slate-600 mt-5 max-w-2xl mx-auto text-lg">
+        Premium websites designed to help local businesses look more trustworthy and professional.
+      </p>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+        <div class="bg-white rounded-[2rem] p-8 shadow-lg hover:-translate-y-2 transition duration-300">
+          <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-500 font-bold text-xl mb-6">D</div>
+          <h4 class="text-2xl font-bold">Dental Clinics</h4>
+          <p class="text-slate-600 mt-4">Appointment booking, WhatsApp, reviews, and gallery.</p>
+        </div>
+
+        <div class="bg-white rounded-[2rem] p-8 shadow-lg hover:-translate-y-2 transition duration-300">
+          <div class="w-14 h-14 bg-pink-100 rounded-2xl flex items-center justify-center text-pink-500 font-bold text-xl mb-6">S</div>
+          <h4 class="text-2xl font-bold">Salon Websites</h4>
+          <p class="text-slate-600 mt-4">Luxury salon websites with pricing, gallery, and bookings.</p>
+        </div>
+
+        <div class="bg-white rounded-[2rem] p-8 shadow-lg hover:-translate-y-2 transition duration-300">
+          <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center text-green-500 font-bold text-xl mb-6">G</div>
+          <h4 class="text-2xl font-bold">Gym Websites</h4>
+          <p class="text-slate-600 mt-4">Premium fitness websites with plans, trainers, and schedules.</p>
+        </div>
+
+        <div class="bg-white rounded-[2rem] p-8 shadow-lg hover:-translate-y-2 transition duration-300">
+          <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center text-orange-500 font-bold text-xl mb-6">C</div>
+          <h4 class="text-2xl font-bold">Cafe Websites</h4>
+          <p class="text-slate-600 mt-4">Beautiful cafe websites with menu, gallery, and reservations.</p>
+        </div>
+
+        <div class="bg-white rounded-[2rem] p-8 shadow-lg hover:-translate-y-2 transition duration-300">
+          <div class="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center text-purple-500 font-bold text-xl mb-6">R</div>
+          <h4 class="text-2xl font-bold">Restaurant Websites</h4>
+          <p class="text-slate-600 mt-4">Modern restaurant websites with menu, table booking, and reviews.</p>
+        </div>
+
+        <div class="bg-white rounded-[2rem] p-8 shadow-lg hover:-translate-y-2 transition duration-300">
+          <div class="w-14 h-14 bg-cyan-100 rounded-2xl flex items-center justify-center text-cyan-500 font-bold text-xl mb-6">E</div>
+          <h4 class="text-2xl font-bold">Real Estate Websites</h4>
+          <p class="text-slate-600 mt-4">Property showcase websites with listings, inquiry forms, and maps.</p>
+        </div>
+
+        <div class="bg-white rounded-[2rem] p-8 shadow-lg hover:-translate-y-2 transition duration-300">
+          <div class="w-14 h-14 bg-yellow-100 rounded-2xl flex items-center justify-center text-yellow-500 font-bold text-xl mb-6">T</div>
+          <h4 class="text-2xl font-bold">Tuition Center Websites</h4>
+          <p class="text-slate-600 mt-4">Education websites with course info, admissions, and contact forms.</p>
+        </div>
+
+        <div class="bg-white rounded-[2rem] p-8 shadow-lg hover:-translate-y-2 transition duration-300">
+          <div class="w-14 h-14 bg-red-100 rounded-2xl flex items-center justify-center text-red-500 font-bold text-xl mb-6">H</div>
+          <h4 class="text-2xl font-bold">Hotel Websites</h4>
+          <p class="text-slate-600 mt-4">Luxury hotel websites with rooms, gallery, and booking options.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="py-24 px-6 bg-white">
+    <div class="max-w-7xl mx-auto text-center">
+      <p class="text-blue-500 uppercase tracking-[0.3em] font-semibold">Portfolio</p>
+      <h3 class="text-5xl font-bold mt-4">Recent Projects & Demo Websites</h3>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+        <div class="bg-[#f7fbff] rounded-[2rem] overflow-hidden shadow-lg">
+          <div class="h-56 bg-gradient-to-br from-blue-100 to-slate-100 flex items-center justify-center text-slate-400 text-lg font-medium">
+            Upload Screenshot Here
+          </div>
+          <div class="p-6 text-left">
+            <span class="bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-xs font-semibold">Dental Clinic</span>
+            <h4 class="text-2xl font-bold mt-5">BrightSmile Dental Care</h4>
+            <p class="text-slate-600 mt-3">Premium dental clinic website with booking form, WhatsApp button, reviews, and gallery.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="py-24 px-6 bg-white">
+    <div class="max-w-7xl mx-auto text-center">
+      <h3 class="text-5xl font-bold mt-4">Premium Packages</h3>
+
+      <div class="grid md:grid-cols-3 gap-8 mt-16">
+        <div class="bg-[#f7fbff] rounded-[2rem] p-10 shadow-lg border border-slate-100">
+          <h4 class="text-2xl font-bold">Starter</h4>
+          <p class="text-5xl font-bold text-blue-500 mt-4">₹9,999</p>
+        </div>
+
+        <div class="bg-blue-500 text-white rounded-[2rem] p-10 shadow-2xl scale-105">
+          <h4 class="text-2xl font-bold">Professional</h4>
+          <p class="text-5xl font-bold mt-4">₹24,999</p>
+        </div>
+
+        <div class="bg-[#f7fbff] rounded-[2rem] p-10 shadow-lg border border-slate-100">
+          <h4 class="text-2xl font-bold">Premium</h4>
+          <p class="text-5xl font-bold text-blue-500 mt-4">₹49,999+</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-24 px-6 bg-[#eef7ff]">
+    <div class="max-w-5xl mx-auto glass rounded-[2rem] p-10 shadow-2xl">
+      <div class="text-center">
+        <h3 class="text-5xl font-bold">Let’s Build Something Great</h3>
+        <p class="text-slate-600 mt-4 text-lg">Contact Nexora Solutions at nexorasolution2559@gmail.com</p>
+      </div>
+
+      <form action="https://formspree.io/f/xbdqynke" method="POST" autocomplete="off" class="grid md:grid-cols-2 gap-6 mt-12">
+        <input type="hidden" name="_next" value="thank-you.html">
+
+        <input type="text" name="name" placeholder="Your Name" required class="rounded-2xl border border-slate-200 px-5 py-4 outline-none focus:border-blue-500" />
+
+        <input type="text" name="business" placeholder="Business Name" class="rounded-2xl border border-slate-200 px-5 py-4 outline-none focus:border-blue-500" />
+
+        <input type="tel" name="phone" placeholder="Phone Number" required pattern="[0-9]{10}" inputmode="numeric" oninput="this.value=this.value.replace(/[^0-9]/g,'')" class="rounded-2xl border border-slate-200 px-5 py-4 outline-none focus:border-blue-500" />
+
+        <input type="email" name="email" placeholder="Email Address" required class="rounded-2xl border border-slate-200 px-5 py-4 outline-none focus:border-blue-500" />
+
+        <textarea name="message" rows="5" placeholder="Tell us about your project" class="md:col-span-2 rounded-2xl border border-slate-200 px-5 py-4 outline-none focus:border-blue-500"></textarea>
+
+        <button type="submit" class="md:col-span-2 bg-blue-500 hover:bg-blue-600 text-white py-4 rounded-2xl font-semibold shadow-lg transition">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    ScrollReveal().reveal('section > div', {
+      distance: '60px',
+      duration: 1200,
+      easing: 'ease-out',
+      origin: 'bottom',
+      interval: 150,
+      reset: false
+    });
+  </script>
+
+  <script>
+    window.addEventListener('pageshow', function () {
+      const form = document.querySelector('form');
+      if (form) {
+        form.reset();
+      }
+    });
+  </script>
+
+</body>
+</html>
+```
